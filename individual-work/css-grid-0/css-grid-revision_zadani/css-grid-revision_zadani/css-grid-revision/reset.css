@@ -2,10 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+body{
+  height: 100vh;
+}
 html,
 body{
   background-color: aliceblue;
+  margin: 0px;
+  padding: 0px;
 }
 div,
 span,
@@ -114,8 +118,7 @@ section {
   background-color: red;
   MARGIN-right: 10%;
   margin-left: 10%;
-  height: 50%;
-  bottom: 0PX;
+  height: 58.5vh;
 }
 body {
   line-height: 1;
@@ -144,15 +147,24 @@ color: aqua;
 }
 .grid-container{
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4,auto);
+  padding-bottom: 35%;
+  margin: 0px;
+  grid-gap: 10px;
+  height: 100%;
 }
 .grid-item:nth-child(-n+3){
 margin-top: 40px;
 }
 .grid-item{
-  margin: 30px;
+  display: flex;
+  margin: 0px;
   padding: 30px;
   background-color: blueviolet;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 .grid-item:nth-child(1 ){
   background-color: blue;
