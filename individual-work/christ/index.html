@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #000;
+	}
+	canvas {
+		display: block;
+		margin: 0 auto;
+	}
+</style>
+<body>
+	<canvas id="game" width="600" height="600"></canvas>
+	<script>
+		// Variables for canvas and context
+		var canvas = document.getElementById("game");
+		var ctx = canvas.getContext("2d");	// Variables for game settings
+	var snakeSize = 20;
+	var snakeSpeed = 100; // lower value is faster
+	var direction = "right";
+	var snakeBody = [[3,1],[2,1],[1,1]];
+	var food = [10,10];
+
+	// Function to draw snake on canvas
+	function drawSnake() {
+		ctx.fillStyle = "#fff";
+		for (var i = 0; i < snakeBody.length; i++) {
+			ctx.fillRect(snakeBody[i][0]*snakeSize, snakeBody[i][1]*snakeSize, snakeSize, snakeSize);
+		}
+	}
+
+	// Function to draw food on canvas
+	function drawFood() {
+		ctx.fillStyle = "#f00";
+		ctx.fillRect(food[0]*snakeSize, food[1]*snakeSize, snakeSize, snakeSize);
+	}
+
+	// Function to move snake
+	function moveSnake() {
+		var newHead;
+		if (direction == "right") {
+			newHead = [snakeBody[0][0]+1, snakeBody[0][1]];
+		} else if (direction == "left") {
+			newHead = [snakeBody[0][0]-1, snakeBody[0][1]];
+		} else if (direction == "up") {
+			newHead = [snakeBody[0][0], snakeBody[0][1]-1];
+		} else if (direction == "down") {
+			newHead = [snakeBody[0][0], snakeBody[0][1]+1];
+		}
+		snakeBody.unshift(newHead);
+
+		// Check if snake has eaten food
+		if (snakeBody[0][0] == food[0] && snakeBody[0][1] == food[1]) {
+			// Generate new food location
+			food = [Math.floor(Math.random()*30), Math.floor(Math.random()*30)];
+		} else {
+			// Remove last element of snake body
+			snakeBody.pop();
+		}
+	}
+
+	// Function to check game over
+	function checkGameOver() {
+		// Check if snake has collided with
+    }
