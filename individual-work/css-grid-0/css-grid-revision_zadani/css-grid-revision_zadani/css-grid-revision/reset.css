@@ -23,6 +23,7 @@ h1{
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
+  height: 5vh;
 
 }
 h2,
@@ -118,7 +119,6 @@ section {
   background-color: red;
   MARGIN-right: 10%;
   margin-left: 10%;
-  height: 58.5vh;
 }
 body {
   line-height: 1;
@@ -142,10 +142,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+section{
+  height: 100%;
+}
 .hint{
 color: aqua;
+height: 5vh;
 }
-
+.grid-container{
+  height: 90vh;
+}
 .grid-item{
   display: flex;
   margin: 0px;
