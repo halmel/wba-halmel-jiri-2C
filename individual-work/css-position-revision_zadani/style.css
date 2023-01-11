@@ -33,6 +33,7 @@ align-items: center;
 }
 .navbar{
   padding-left: 60px;
+  margin-left: 500px;
 }
 nav>div{
   margin: 5%;
@@ -42,7 +43,7 @@ vertical-align: middle;
 width: 33%;
 }
 .headerlogo{
-
+margin-left: 100px;
 height: 100%;
 
 }
@@ -77,6 +78,7 @@ width: 100%;
   width: 35%;
   text-align: center;
   justify-content: center;
+  padding-top: 25%;
 }
 .hero-section>.hero-text>p{
   text-align: center;
@@ -88,12 +90,30 @@ width: 100%;
   
 }
 .navitem{
-  width: 50px;
+  width: 10px;
+  margin: 25px;
+  padding: 25px;
 }
 .text{
   width: 50%;
   margin-left: 25%;
   text-align: center;
+}
+.top-link a img{
+  height: 50px;
+  width: 50px;
+}
+.top-link{
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+.top-link-wrapper{
+  position: sticky;
+  height: 5%;
+  width: 5%;
+  margin-left: 95%;
+  top: 0%;
 }
 /* Barvy
 Světlá barva pozadí: #f2b880
