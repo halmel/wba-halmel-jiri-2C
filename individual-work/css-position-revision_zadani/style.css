@@ -1,0 +1,80 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+display: flexbox;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 10%;
+
+flex-direction: row;
+}
+nav{
+list-style-type: none;
+display: flex;
+position: fixed;
+top: 0%;
+right: 0%;
+width: 50%;
+height: 5%;
+align-items: center;
+}
+
+nav>div{
+  margin: 5%;
+  padding: 5%;
+justify-content: space-between;
+vertical-align: middle;
+width: 33%;
+}
+.headerlogo{
+
+height: 100%;
+
+}
+.headerlogo>img{
+height: 100%;
+
+}
+.hero-section{
+display: flexbox;
+
+list-style-type: none;
+align-items: center;
+vertical-align: top;
+height: 500px;
+width: 80%;
+background-color: #752400;
+margin: 20% 0% 10% 10%;
+
+}
+.hero-section>.hero-img{
+height: 80%;
+left: 0%;
+width: 50%;
+margin: 10%;
+
+}
+.hero-section>.hero-img>img{
+height: 100%;
+width: 50%;
+}
+.hero-section>.hero-text{
+  position: absolute;
+  height: 300px;
+  width: 35%;
+top: 25%;
+  right: 10%;
+}
+.hero-section>.hero-text>p{
+  overflow: auto;
+  height: 300px;
+  
+}
+/* Barvy
+Světlá barva pozadí: #f2b880
+Tmavší barvy pozadí za obrázkem: #e88121
+Barva text v oranžovém pozadí: #752400
+*/
