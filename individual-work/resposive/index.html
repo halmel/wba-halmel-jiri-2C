@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-item{
+            padding: 50px   ;
+            background-color: aqua;
+            width: 50px;
+        }
+
+        /* styles for screens wider than 600px */
+        @media (min-width: 600px) {
+            body {
+                font-size: 16px;
+                background-color: brown;
+            }
+            .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+            #main {
+                width: 800px;
+                margin: 0 auto;
+                background-color: rebeccapurple;
+            }
+        }
+        /* styles for screens smaller than 600px */
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+                background-color: beige;
+                width: 1000000px;
+            }
+            .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+            #main {
+                background-color: aqua;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Column 1</div>
+        <div class="grid-item">Column 2</div>
+        <div class="grid-item">Column 3</div>
+    </div>
+      
+    
+</body>
+</html>
