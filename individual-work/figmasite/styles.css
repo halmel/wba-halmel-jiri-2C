@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    height: 7vh;
+    background-color: rgba(203, 193, 177, 1);
+    justify-content: center;
+    justify-items: stretch;
+}
+body{
+    margin: 0px;
+}
