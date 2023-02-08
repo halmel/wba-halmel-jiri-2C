@@ -10,6 +10,8 @@ header{
 }
 body{
     margin: 0px;
+    overflow: scroll;
+    height: 200vh;
 }
 .text_box_header{
     justify-items: center;
@@ -61,4 +63,13 @@ body{
     justify-content: center;
     padding: 2px;
     width: 50%;
+}
+.imgimgbox{
+    position: fixed;
+    height: 80vh;
+    width: 800vw;
+    z-index: 9799;
+    top: 120vh;
+    right: 10vh;
+    left: 10vh;
 }
