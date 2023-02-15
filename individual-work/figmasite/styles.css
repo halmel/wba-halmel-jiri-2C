@@ -4,13 +4,23 @@ header{
     background-color: rgba(203, 193, 177, 1);
     justify-content: center;
     justify-items: stretch;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 69;
+    
+}
+.home_header{
+    top: 0px;
+
+
+}
+.home_feet{
+
+bottom: -110vh;
+height: 10vh;
 }
 body{
     margin: 0px;
-    overflow: scroll;
     height: 200vh;
 }
 .text_box_header{
@@ -34,7 +44,7 @@ body{
 .backruond_img{
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     z-index: 10;
     position: relative;
 }
@@ -42,13 +52,14 @@ body{
     display: block;
     width: 100%;
     height: 100vh;
-    position: fixed;
-    
+    position: absolute;
+    top: 0px;
+
 }
 .text_box{
     background-color:rgba(124, 116, 116, 0.57);
     z-index: 20;
-    position: relative;
+    position: absolute;
     width: 50vh;
     height: 22vh;
     bottom: 2vh;
@@ -68,9 +79,23 @@ body{
 .imgimgbox{
     position: relative;
     height: 80vh;
-    width: 800vw;
+    width: 90%;
     z-index: 9799;
-    top: 120vh;
-    right: 10vh;
-    left: 10vh;
+    top: 110vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    justify-items: center;
+}
+.text_text_box{
+    width: 27vh;
+    margin-left: 0px;
+}
+.img_img_img_box{
+    display: grid;
+    grid-template-columns: 31% 31%31% ;
+}
+a{  
+text-decoration: none;
+color: black;
 }
