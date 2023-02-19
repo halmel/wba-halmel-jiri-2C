@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="desktop.css">
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css">
 </head>
 <body>
     <header class="home_header">
@@ -14,16 +15,15 @@
         <h1 class="text_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
         <h1 class="text_header"><a href="./Kontakt.html">Kontakt</a></h1>
     </header>
-<h1>Kontakt</h1>
-<form >
-    <input type="text" style="width: 50%;">
-    <input type="text" style="width: 50%;">
-    <input type="text" style="width: 50%;">
-    <input type="text" style="width: 50%;">
-    <input type="text" style="width: 50%;">
-    <input type="submit" value="Submit">
+<h1 style="margin-top: 20vh;text-align: center;">Kontakt</h1>
+<form class="formas">
+    <input type="text" class="form-item" style="grid-area: q;"value="Jméno">
+    <input type="text" class="form-item" style="grid-area: w;"value="Příjmení">
+    <input type="text" class="form-item" style="grid-area: e;"value="E-mail">
+    <input type="text" class="form-item" style="grid-area: r;"value="Telefon">
+    <input type="text" class="form-item" style="grid-area: t;"value="Vaše zpráva">
+    <input type="submit" value="Odeslat" style="grid-area: z;width: 30%;margin-left: 35%;height: 3vh;">
 </form>
-
 
 
 
