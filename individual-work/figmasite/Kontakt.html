@@ -11,10 +11,19 @@
 <body>
     <header class="home_header">
         <a href="./index.html" class="img_link"><img src="logo.png" alt="logo" class="logo"></a>
-        <h1 class="text_box_header" >Dovolená</h1>
+        <h1 class="text_header" ><a href="./index.html">Dovolená</a></h1>
+        <h1 class="text_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
+        <h1 class="text_box_header"><a href="./Kontakt.html">Kontakt</a></h1>
+        <button class="logo_button" onclick="sb_open()"></button>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <button class="logo_button" onclick="sb_close()"></button>
         <h1 class="text_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
         <h1 class="text_header"><a href="./Kontakt.html">Kontakt</a></h1>
-    </header>
+
+
+    </div>
 <h1 style="margin-top: 20vh;text-align: center;">Kontakt</h1>
 <form class="formas">
     <input type="text" class="form-item" style="grid-area: q;"value="Jméno">
@@ -22,7 +31,7 @@
     <input type="text" class="form-item" style="grid-area: e;"value="E-mail">
     <input type="text" class="form-item" style="grid-area: r;"value="Telefon">
     <input type="text" class="form-item" style="grid-area: t;"value="Vaše zpráva">
-    <input type="submit" value="Odeslat" style="grid-area: z;width: 30%;margin-left: 35%;height: 3vh;">
+    <input type="submit" value="Chci s vámi!" style="grid-area: z;width: 30%;margin-left: 35%;height: 3vh;">
 </form>
 
 
@@ -38,5 +47,17 @@
         <p>Obchodní podmínky
             ochrana osobních údajů</p>
     </header>
+
+    <script>
+        function sb_open() {
+          document.getElementById("sidebar").style.display = "grid";
+        }
+        
+        function sb_close() {
+          document.getElementById("sidebar").style.display = "none";
+        }
+
+
+</script>
 </body>
 </html>

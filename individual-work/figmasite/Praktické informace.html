@@ -11,10 +11,18 @@
 <body>
     <header class="home_header">
         <a href="./index.html" class="img_link"><img src="logo.png" alt="logo" class="logo"></a>
-        <h1 class="text_box_header" >Dovolená</h1>
+        <h1 class="text_header" ><a href="./index.html">Dovolená</a></h1>
+        <h1 class="text_box_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
+        <h1 class="text_header"><a href="./Kontakt.html">Kontakt</a></h1>
+        <button class="logo_button" onclick="sb_open()"></button>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="logo_button" onclick="sb_close()"></button>
         <h1 class="text_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
         <h1 class="text_header"><a href="./Kontakt.html">Kontakt</a></h1>
-    </header>
+
+
+    </div>
     <div class="xs-box">
 <div class="s_box">
     <div class="img_text_box">
@@ -26,7 +34,7 @@
         <h3>Průběh dovolené</h3>
     </div>
     <div class="img_text_box">
-        <img src="sale.png" alt="sus">
+        <img src="sale.png" alt="sos">
         <h3>slevový systém</h3>
     </div>
     <div class="img_text_box">
@@ -62,5 +70,18 @@
         <p>Obchodní podmínky
             ochrana osobních údajů</p>
     </header>
+
+
+    <script>
+        function sb_open() {
+          document.getElementById("sidebar").style.display = "grid";
+        }
+        
+        function sb_close() {
+          document.getElementById("sidebar").style.display = "none";
+        }
+
+
+</script>
 </body>
 </html>

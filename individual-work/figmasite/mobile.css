@@ -1,0 +1,214 @@
+
+
+
+.logo_button{
+    
+    background-image: url("burger menu.png");
+    width: 5vh;
+height: 5vh;
+margin-top: 1vh;
+    background-size: cover;
+    margin-right: 5vh;
+    background-color: rgba(203, 193, 177, 1);
+    border: 0cm;
+    z-index: 999999;
+    position: relative;
+  }
+  .logo_button:hover{
+    background-color: blue;
+  }
+  header{
+    display: flex;
+    height: 7vh;
+    background-color: rgba(203, 193, 177, 1);
+    justify-content: space-between;
+    width: 100%;
+    z-index: 69;
+}
+header h1{
+    display: none;
+}
+.home_header{
+    top: 0px;
+
+
+}
+.img_link{
+    height: 7vh;
+    margin-left: 5vh;
+    z-index: 9999;
+    
+}
+.logo{
+    margin-left: 5%;
+    margin-right: 35%;
+    height: 100%;
+    z-index: 99999;
+}
+body{
+    margin: 0px;
+}
+.backround_img_box{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+
+}
+.backruond_img{
+    display: none;
+}
+.text_box{
+    background-color:rgba(124, 116, 116, 0.57);
+    z-index: -5555555555555;
+    position: absolute;
+    width: 90%;
+    height: 60vh;
+    top: 20vh;
+    margin-left: 3.5%;
+    margin-right: 5%;
+    padding: 2vh;
+    justify-items: center;
+    justify-content: center;
+    
+}
+.text_box_header{
+    justify-items: center;
+    justify-content: center;
+    height: 5vh;
+    margin: auto;
+
+    background-color: rgba(124, 116, 116, 1);
+}
+.text_exe{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 2px;
+    width: 50%;
+}
+.imgimgbox{
+    position: relative;
+    height: 80vh;
+    width: 90%;
+    z-index: 9799;
+    top: 110vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    justify-items: center;
+}
+.home_feet{
+    justify-content: center;
+    bottom: -190%;
+    height: 10vh;
+    position: absolute;
+    }
+.img_img_img_box img{
+    width: 300px;
+    height: 300px;
+
+
+
+}
+.img_img_img_box{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    column-gap: 15px;
+    grid-template-areas: 
+      "q r"
+      "w t"
+      "e z"; 
+}
+.sidebar{
+    display: none;
+    width: 40%;
+    height: 45vh;
+    top: 7vh;
+    margin: 0px;
+    margin-left: 60%;
+    background-color: rgba(203, 193, 177, 1);
+    justify-content: right;
+    position: absolute;
+    z-index: 99999999999999;
+
+}
+a{  
+    text-decoration: none;
+    color: black;
+    z-index: 999;
+    position: relative;
+    }
+    h1{
+        z-index: 9999;
+        position: relative;
+    }
+
+    .img_text_box h3{
+        width: 50%;
+        margin-right: 0px;
+    }
+    .img_text_box{
+        display: flex;
+
+    }
+    .s_box{
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        width: 100vh;
+        
+
+    }
+    .home_footer{
+        bottom: 0px;
+        position: absolute;
+    }
+    .xs-box{
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+    }
+    .formas {
+        position: absolute;
+        display: grid; 
+        grid-template-columns:  1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 10fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "q"
+        "w"
+        "e"
+        "r"
+        "t"
+        "z"
+          ; 
+    
+          width: 60%;
+          margin-left: 20%;
+          height: 30vh;
+          row-gap: 2vh;
+          column-gap: 1vh;
+      }
+    
+      .form-item{
+        background-color: rgba(124, 116, 116, 0.7);
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
+      }
+      .text_exe{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        padding: 2px;
+        width: 50%;
+    }
+    .bottomm-text-box{
+        width: 20%;
+        position: absolute;
+        bottom: -175%;
+        left: 40%;
+        background-color: rgba(124, 116, 116, 0.7);
+      }

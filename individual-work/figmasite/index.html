@@ -11,10 +11,18 @@
 <body>
     <header class="home_header">
         <a href="./index.html" class="img_link"><img src="logo.png" alt="logo" class="logo"></a>
-        <h1 class="text_box_header" >Dovolená</h1>
+        <h1 class="text_box_header" ><a href="./index.html">Dovolená</a></h1>
         <h1 class="text_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
         <h1 class="text_header"><a href="./Kontakt.html">Kontakt</a></h1>
+        <button class="logo_button" onclick="sb_open()"></button>
     </header>
+    <div class="sidebar" id="sidebar">
+        <button class="logo_button" onclick="sb_close()"></button>
+        <h1 class="text_header"><a href="./Praktické informace.html">Praktické informace</a></h1>
+        <h1 class="text_header"><a href="./Kontakt.html">Kontakt</a></h1>
+
+
+    </div>
     <div class="backround_img_box">
         <div class="text_box">
             <h1 style="color: white; justify-items: center; justify-content: center; display: flex;">DOVOLÉNÁ S NÁMI</h1>
@@ -26,27 +34,39 @@
     <div class="imgimgbox">
         <h1 style="text-align: center; text-transform: uppercase;">prozkoumejte krásy evropských ostrovů</h1>
         <div class="img_img_img_box">
-            <img src="madeira.png" alt="mvsdhjzud">
-            <img src="sardinie.png" alt="sardtrars">
-            <img src="kypr.png" alt="kopr">
-            <div class="text_text_box">
+            <img src="madeira.png" alt="mvsdhjzud"style="grid-area: q;">
+            <img src="sardinie.png" alt="sardtrars"style="grid-area: w;">
+            <img src="kypr.png" alt="kopr" style="grid-area: e;">
+            <div class="text_text_box"style="grid-area: r;">
                 <h1>Atlantické ostrovy</h1>
                 <p>Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Donec iaculis gravida nulla.</p>
             </div>
-            <div class="text_text_box">
+            <div class="text_text_box"style="grid-area: t;">
                 <h1>západní středomoří</h1>
                 <p>Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Donec iaculis gravida nulla.</p>
             </div>
-            <div class="text_text_box">
+            <div class="text_text_box"style="grid-area: z;">
                 <h1>východní středomoří</h1>
                 <p>Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Donec iaculis gravida nulla.</p>
             </div>
         </div>
 
     </div>
+    <h1 class="text_exe bottomm-text-box">CHCI S VÁMI!</h1>
     <header class="home_feet" >
         <p>Obchodní podmínky
             ochrana osobních údajů</p>
     </header>
+    <script>
+        function sb_open() {
+          document.getElementById("sidebar").style.display = "grid";
+        }
+        
+        function sb_close() {
+          document.getElementById("sidebar").style.display = "none";
+        }
+
+
+</script>
 </body>
 </html>

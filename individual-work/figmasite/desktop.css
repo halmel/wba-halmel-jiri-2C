@@ -1,5 +1,6 @@
 header{
-    display: flex;
+    display: inline-block;
+    vertical-align: middle;
     height: 7vh;
     background-color: rgba(203, 193, 177, 1);
     justify-content: center;
@@ -31,7 +32,7 @@ body{
     justify-content: center;
     height: 5vh;
     margin: auto;
-
+z-index: 999999999999999999999;
     background-color: rgba(124, 116, 116, 1);
 }
 .text_header{
@@ -39,6 +40,7 @@ body{
     justify-content: center;
     height: 5vh;
     margin: auto; 
+    z-index: 9999999999999999999999999;
 }
 .logo{
     margin-left: 5%;
@@ -97,7 +99,19 @@ body{
 }
 .img_img_img_box{
     display: grid;
-    grid-template-columns: 31% 31%31% ;
+    display: grid;
+    width: 100%; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    column-gap: 15px;
+    grid-template-areas: 
+      "q w e"
+      "r t z"; 
+}
+.img_img_img_box img{
+    width: 300px;
+    height: 300px;
 }
 a{  
 text-decoration: none;
@@ -159,4 +173,17 @@ h3{
     top: 30vh;
     justify-content: center;
     justify-items: center;
+  }
+  .logo_button{
+display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  .bottomm-text-box{
+    width: 20%;
+    position: absolute;
+    bottom: -100%;
+    left: 40%;
+    background-color: rgba(124, 116, 116, 0.7);
   }
