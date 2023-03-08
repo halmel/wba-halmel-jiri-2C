@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  input[type="text"] {
+    width: 100px;
+  }
+  
+  select {
+    width: 100px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #result {
+    font-weight: bold;
+  }
+  
