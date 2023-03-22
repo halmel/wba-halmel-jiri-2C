@@ -2,10 +2,12 @@
 
 
       @keyframes mymove {
-        50% {transform: rotate(9deg);}
-        75% {transform: skew(9999deg,4455454deg);}
+        25%{transform: translate(500px,500px);}
+        50% {transform: rotate(50deg);}
+        66% {transform: skew(9999deg,4455454deg);}
+        75%{transform: scale3d(0.00001);}
       }
-
+      $x-l:-0.5em;
 
 
 
@@ -23,8 +25,9 @@
           opacity: 0.8;
           object-fit: cover;
           &:hover {
+            $x-l:-1em !global;
             opacity: 1;
-            animation: mymove 5s infinite;
+            animation: mymove 0.01s infinite;
 
           }
         }
@@ -37,6 +40,19 @@
         align-items: center;
       }
       .textbox{
+        &:hover {
+          $x-l:-0.5em !global;
+          opacity: 1;
+          animation: mymove 0.01s infinite;
+
+        }
         width: 100%;
         text-align: center;
       }
+      h1{
+        letter-spacing: $x;
+      }
+      p{
+        letter-spacing: $x;
+      }
+

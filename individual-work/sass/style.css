@@ -1,17 +1,29 @@
 @-webkit-keyframes mymove {
+  25% {
+    transform: translate(500px, 500px);
+  }
   50% {
-    transform: rotate(9deg);
+    transform: rotate(50deg);
+  }
+  66% {
+    transform: skew(9999deg, 4455454deg);
   }
   75% {
-    transform: skew(9999deg, 4455454deg);
+    transform: scale3d(0.00001);
   }
 }
 @keyframes mymove {
+  25% {
+    transform: translate(500px, 500px);
+  }
   50% {
-    transform: rotate(9deg);
+    transform: rotate(50deg);
+  }
+  66% {
+    transform: skew(9999deg, 4455454deg);
   }
   75% {
-    transform: skew(9999deg, 4455454deg);
+    transform: scale3d(0.00001);
   }
 }
 .image-grid {
@@ -30,8 +42,8 @@
 }
 .image-grid img:hover {
   opacity: 1;
-  -webkit-animation: mymove 5s infinite;
-          animation: mymove 5s infinite;
+  -webkit-animation: mymove 0.01s infinite;
+          animation: mymove 0.01s infinite;
 }
 
 .kontainer {
@@ -45,4 +57,17 @@
 .textbox {
   width: 100%;
   text-align: center;
+}
+.textbox:hover {
+  opacity: 1;
+  -webkit-animation: mymove 0.01s infinite;
+          animation: mymove 0.01s infinite;
+}
+
+h1 {
+  letter-spacing: -0.5em;
+}
+
+p {
+  letter-spacing: -0.5em;
 }/*# sourceMappingURL=style.css.map */
