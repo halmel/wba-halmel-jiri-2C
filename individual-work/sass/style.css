@@ -1,14 +1,48 @@
+@-webkit-keyframes mymove {
+  50% {
+    transform: rotate(9deg);
+  }
+  75% {
+    transform: skew(9999deg, 4455454deg);
+  }
+}
+@keyframes mymove {
+  50% {
+    transform: rotate(9deg);
+  }
+  75% {
+    transform: skew(9999deg, 4455454deg);
+  }
+}
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  width: 1440px;
+  height: 800px;
+  align-self: center;
 }
-
-img {
-  width: 100%;
+.image-grid img {
+  width: 480px;
   height: auto;
   opacity: 0.8;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-img:hover {
+.image-grid img:hover {
   opacity: 1;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+.kontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox {
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

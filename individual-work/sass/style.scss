@@ -1,15 +1,42 @@
+
+
+
+      @keyframes mymove {
+        50% {transform: rotate(9deg);}
+        75% {transform: skew(9999deg,4455454deg);}
+      }
+
+
+
+
+
+
 .image-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-      }
+        width: 1440px;
+        height: 800px;
+        align-self: center;
+        img {
+          width: 480px;
+          height: auto;
+          opacity: 0.8;
+          object-fit: cover;
+          &:hover {
+            opacity: 1;
+            animation: mymove 5s infinite;
 
-      img {
-        width: 100%;
-        height: auto;
-        opacity: 0.8;
-
-        &:hover {
-          opacity: 1;
+          }
         }
+      }
+      .kontainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .textbox{
+        width: 100%;
+        text-align: center;
       }
